@@ -8,6 +8,7 @@ ymt = ansiw.isalnum()
 print(ymt)
 
 step = 'starting ls ...'
+
 ste = step.strip('.')
 print(ste)
 
@@ -26,5 +27,6 @@ print(mixsize)
 zhsize = alstrsiz.swapcase()
 print(zhsize)
 
-rep = step.replace('.', ',', 2)
+rep = step.replace('.', '*', 4)
 print(rep)
+
