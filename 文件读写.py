@@ -14,6 +14,17 @@ from asyncore import read
 
 # w:  1.先清空文件中的字符串 2. 写入对应字符串
 
-f = open("./测试.txt","r+",encoding="utf-8")
+f = open("./ont_file","r+",encoding="utf-8")
 f.write("这是python文件读写视频中的测试")
 print(f.read())
+print(f.tell())
+f.close()
+
+with open("./ont_file","r",encoding="utf-8") as w, \
+    open("./two_file","r",ncoding="utf-8") as w1:
+    print(w.read())
+    print(w1.read(3))
+
+import os
+# os.rename("上门服务","ont_file")  # 重命名
+os.rename("上门第二次","two_file")
