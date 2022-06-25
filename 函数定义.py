@@ -32,3 +32,49 @@ t = test()
 print(t)
 
 
+def func(*args):    # 在形参的位置上输入 * 是聚合元组 打包、
+    print(args)     # *args :  接收多余的位置参数
+
+func(1,2,3,4,5,6,7,5,4,3)
+
+
+
+def func(a,b,c,d,**args):   # **value 接收多余的关键字参数
+    print("这个是测试",a,b,c,d,args)
+
+func(a=1,b=2,c=3,d=3,f=5,g=6)
+
+
+def func(*args,**kwargs):
+    print(args,kwargs)
+
+func(1,2,4,5,6,6,4,34,5234,a=22,b=4444,c=33)
+
+
+# 参数的优先级 ： 位置 > 动态位置 > 默认 > 动态关键字
+
+
+
+# 名称空间
+# 内置空间 ：存放python自带的内容
+# 全局空间 ： py文件
+# 局部空间 ：函数体中的空间
+# 加载顺序： 内置 > 全局 > 局部
+# 取值的顺序： 局部 > 全局 > 内置
+
+
+# 作用域
+# 全局作用域： 内置空间 + 全局空间
+# 局部作用域： 局部空间
+# 函数体中不能修改全局作用域的变量，除非通过申明(global)来修改
+
+
+hs_version = 100
+def func():
+    global hs_version     # 申明修改全局作用域的变量
+    hs_version = hs_version - 10 
+    print(hs_version)
+
+func()
+
+print(hs_version)

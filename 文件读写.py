@@ -28,3 +28,5 @@ with open("./ont_file","r",encoding="utf-8") as w, \
 import os
 # os.rename("上门服务","ont_file")  # 重命名
 os.rename("上门第二次","two_file")
+
+os.rename("文件读写.py","file_write.py")
