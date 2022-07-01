@@ -1,3 +1,6 @@
+from pstats import SortKey
+
+
 def func():
     for i in range(3):
         user = input("请输入账号:")
@@ -10,4 +13,4 @@ def func():
             else:
                 print("输入的账号密码错误，请重新输入！")
 
-func()
+

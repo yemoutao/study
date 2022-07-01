@@ -33,7 +33,7 @@ print(t)
 
 
 def func(*args):    # 在形参的位置上输入 * 是聚合元组 打包、
-    print(args)     # *args :  接收多余的位置参数
+    print(args)     # *args :  接收多余的位置参数，以元组的形式显示
 
 func(1,2,3,4,5,6,7,5,4,3)
 
@@ -72,7 +72,7 @@ func(1,2,4,5,6,6,4,34,5234,a=22,b=4444,c=33)
 hs_version = 100
 def func():
     global hs_version     # 申明修改全局作用域的变量
-    hs_version = hs_version - 10 
+    hs_version = hs_version - 10
     print(hs_version)
 
 func()
