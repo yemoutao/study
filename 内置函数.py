@@ -1,5 +1,6 @@
 # 内置函数
 
+from multiprocessing.sharedctypes import Value
 from tracemalloc import start
 
 
@@ -29,9 +30,23 @@ print(ggt)
 7.type()  # 查询类型
 print(type(ggt))
 
-8. 
+8.zip() # 拉链式合并字符串
+lst1 = [1,2,3,45,4]
+lst2 = [3,4,5,23,1]
+print(dict(zip(lst1,lst2)))  # 字典的创建方式
+
+d = dict(a=1,balu=2)   # 字典的创建方式
+print(d)
+
+9.dir()   # 查看当前内容具有什么方法
+print(dir(str))
 
 
+10.print()  # 打印
+
+# sed="" = 分隔符
+# end="" = 结尾
+# file="" = 输入到文件
 
 
 # 不常用的内置函数以下：
