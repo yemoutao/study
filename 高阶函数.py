@@ -48,5 +48,4 @@ from functools import reduce
         from functools import reduce
         def func(x,y):
             return x * y
-        print(reduce(func,lst))   #1*3=3,3*4=12,12*5=60,60*6=360
-
+        print(reduce(func,lst))   #1*3=3,3*4=12,12*5=60,60*6=360 

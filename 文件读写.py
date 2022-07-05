@@ -31,6 +31,6 @@ os.rename("上门第二次","two_file")
 
 os.rename("文件读写.py","file_write.py")
 
-f = open("内置函数.py","w+",encoding="utf-8")
-f.write("内置函数")
+f = open("推导式.py","w+",encoding="utf-8")
+f.write("###")
 f.read()

@@ -44,7 +44,7 @@ from tracemalloc import start
 
 10.print()  # 打印
 
-11.reverse()  # 反向排序
+11. reverse()  # 反向排序
 
 
 # sed="" = 分隔符
