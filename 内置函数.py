@@ -51,6 +51,15 @@ from tracemalloc import start
 # end="" = 结尾
 # file="" = 输入到文件
 
+11.reversed()  # 反转
+print(list(reversed("bugai,fgw")))  # 用字典的形式显示，把字符串从右到左的方式显示。 之前的字符串不受影响。
+
+
+12.filter()   # 过滤
+
+filter(函数，可迭代对象)
+
+
 
 # 不常用的内置函数以下：
 
