@@ -32,6 +32,6 @@ os.rename("上门第二次","two_file")
 
 os.rename("文件读写.py","file_write.py")
 
-f = open("递归.py","w+",encoding="utf-8")
-f.write("###   递归")
+f = open("多个装饰器装饰一个函数.py","w+",encoding="utf-8")
+f.write("###   多个装饰器装饰一个函数")
 f.read()
