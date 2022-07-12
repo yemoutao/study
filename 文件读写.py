@@ -32,6 +32,11 @@ os.rename("上门第二次","two_file")
 
 os.rename("文件读写.py","file_write.py")
 
+<<<<<<< HEAD
 f = open("多个装饰器装饰一个函数.py","w+",encoding="utf-8")
 f.write("###   多个装饰器装饰一个函数")
+=======
+f = open("递归.py","w+",encoding="utf-8")
+f.write("###   递归")
+>>>>>>> d54d8d28594ad530282665479b838600cb17dc17
 f.read()
