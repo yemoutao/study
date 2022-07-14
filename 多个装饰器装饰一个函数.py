@@ -18,7 +18,7 @@ def wrapper2(func):
     return inner1
 
 def wrapper3(func):
-    def inner3(*args,**kwargs):
+    def  inner3(*args,**kwargs):
         print("第三个装饰器开始")
         ret = func(*args,**kwargs)
         print("第三个装饰器结束")

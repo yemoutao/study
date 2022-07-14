@@ -121,24 +121,24 @@ tb(100)    # auth(100)tb(100)
 
 # 多层参数装饰器套用
 def foo(aa):   # aa = 5
-    def auth(arg):     # arg = False 
+    def auth(arg):     # arg = False
         def wrapper(func):   # func = tb(100)
-            def inner(*args,**kwargs):    
+            def inner(*args,**kwargs):
                 if arg:
                     print("开始装饰")
-                    ret = func(*args,**kwargs) 
+                    ret = func(*args,**kwargs)
                     print("装饰成功")
                 else:
                     print("装饰失败")
-                    ret = func(*args,**kwargs) 
-                return ret               
+                    ret = func(*args,**kwargs)
+                return ret
             return inner
         return wrapper
     return auth
 
-fee = foo(5)  
+fee = foo(5)
 @fee(False)   # == fee(5)auth(False)tb
 def tb(money,beizhu):
-    print(f"花了{money}块钱：{beizhu}")  
+    print(f"花了{money}块钱：{beizhu}")
 
 tb("1","卖出了一颗棒棒糖")   # == fee(5)auth(False)tb(100)
