@@ -50,3 +50,9 @@ print(sys.modules)  # 查看内存中所有的模块
 
 # 模块安装和用途
 # # # pip install module(模块名)
+
+
+# 启动接口，其他模块调用时候不会立马被执行
+# if __name__ == '__main__':
+    # func()
+
