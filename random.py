@@ -17,3 +17,7 @@ random.shuffle(lty)    # 洗牌，打乱顺序
 print(lty)
 
 # 应用场景：验证码
+lst2 = [str(i) for i in range(10)] + [chr(i) for i in range(65,91)] + [chr(i) for i in range(97,123)]
+new_lst = random.sample(lst2,k=6)
+s = "".join(new_lst)
+print(s)
