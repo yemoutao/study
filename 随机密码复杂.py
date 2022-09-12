@@ -1,4 +1,5 @@
 import random
+import string
 # 应用场景：随机复杂密码
 lst2 = [str(i) for i in range(10)] + [chr(i) for i in range(65,91)] + [chr(i) for i in range(97,123)]
 new_lst = random.sample(lst2,k=3)
@@ -15,3 +16,9 @@ sjzm =  random.sample('ASDFGHJKLZXCVBNMQWERTYUIOPabcdefghijklmnopqrstuvwxyzzyxwv
 passwdnum =num1 + xxzm1 + dxzm1 + sjzm 
 sjpasswd = "".join(passwdnum)
 print(sjpasswd)
+
+
+
+ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 11))
+print(ran_str)
+print(ran_str.__len__)
