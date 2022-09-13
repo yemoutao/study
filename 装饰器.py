@@ -35,9 +35,9 @@ func()
 # 标准版装饰器:
 def wrapper(func):
     def inner(*args,**kwargs):
-        """执行被装饰函数前"""
+      #  """执行被装饰函数前"""
          func(*args,**kwargs)
-        """执行被装饰函数后"""
+      #  """执行被装饰函数后"""
     return inner
 
 def foo(*args):
